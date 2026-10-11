@@ -137,6 +137,13 @@ npm start
 - Start the site with `npm start`. The server reads the key and the browser calls only `/api/assistant`; the key is never sent to visitors.
 - `.env` is git-ignored. Do not deploy this site as static files only: deploy it to a Node-capable host and add `NVIDIA_API_KEY` as an environment variable there.
 
+### Business details shown on the site
+
+- **Opening hours:** 24 hours, Monday through Saturday.
+- **Stock message:** reconditioned imported fuel pumps from Europe, America and Japan. Confirm each vehicle fitment before payment.
+- **Logo and favicon:** `assets/images/new/fav.jpeg`.
+- **Advert video and real-stock photos:** kept in `assets/images/new/` and already displayed on the home page and catalogue.
+
 ---
 
 ## 7. Deploy (free)

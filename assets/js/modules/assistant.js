@@ -53,7 +53,7 @@ export function localAnswer(question) {
 
   if (/(where|location|address|directions|map|visit|shop|store|hour|open)/.test(q)) {
     return {
-      text: `Visit ${SITE.name} in ${SITE.country}. Call or WhatsApp ${SITE.phoneDisplay} before you come so the pump is ready.`,
+      text: `Visit ${SITE.name} in ${SITE.country}. We are open 24 hours from Monday through Saturday. Call or WhatsApp ${SITE.phoneDisplay} before you come so the pump is ready.`,
       links: [
         { label: 'Get directions', href: SITE.mapsDirectionsUrl },
         { label: 'WhatsApp us', href: whatsappFor(`Hello ${SITE.name}, I want to visit the shop.`) },

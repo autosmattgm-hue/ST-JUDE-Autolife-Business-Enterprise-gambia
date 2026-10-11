@@ -21,7 +21,8 @@
   <meta property="og:image" content="https://www.your-domain.com/assets/images/hero-fuel-pump.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23ffc61a'/%3E%3Cpath d='M16 52V14h22v38zM22 22h10v8H22zM40 26h6l4 4v14a4 4 0 0 0 8 0V24l-6-6' fill='none' stroke='%23111418' stroke-width='3'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/jpeg" href="assets/images/new/fav.jpeg" />
+  <link rel="apple-touch-icon" href="assets/images/new/fav.jpeg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,7 +44,8 @@
         "geo": { "@type": "GeoCoordinates", "latitude": 13.416826, "longitude": -16.674595 },
         "hasMap": "https://www.google.com/maps/place/13.416826,-16.674595",
         "areaServed": { "@type": "Country", "name": "The Gambia" },
-        "contactPoint": { "@type": "ContactPoint", "telephone": "+220 403 0870", "contactType": "sales", "availableLanguage": ["English"] }
+        "contactPoint": { "@type": "ContactPoint", "telephone": "+220 403 0870", "contactType": "sales", "availableLanguage": ["English"] },
+        "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "00:00", "closes": "23:59" }]
       },
       {
         "@type": "FAQPage",
@@ -51,6 +53,7 @@
           { "@type": "Question", "name": "How do I know which pump my car needs?", "acceptedAnswer": { "@type": "Answer", "text": "Choose your car in the finder, or send us your make, model, year and engine size on WhatsApp. Sending the old pump or a photo of its connector helps us confirm the fit." } },
           { "@type": "Question", "name": "Do you deliver?", "acceptedAnswer": { "@type": "Answer", "text": "Ask us on WhatsApp about delivery. We will tell you what is available and any fees before you pay." } },
           { "@type": "Question", "name": "Is the price fixed?", "acceptedAnswer": { "@type": "Answer", "text": "Prices depend on stock and fitment. We confirm the price with you on WhatsApp before you pay." } },
+          { "@type": "Question", "name": "When are you open?", "acceptedAnswer": { "@type": "Answer", "text": "We are open 24 hours from Monday through Saturday. Contact us on WhatsApp or call before you come so we can have the right pump ready." } },
           { "@type": "Question", "name": "What if my car is not listed?", "acceptedAnswer": { "@type": "Answer", "text": "Send us the details anyway. We check each request, and some pumps fit more cars than their listing shows." } }
         ]
       }
@@ -64,11 +67,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="#top" class="brand" aria-label="ST JUDE Autolife, back to top">
-        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-          <rect width="48" height="48" rx="6" fill="#ffc61a" />
-          <path d="M11 38V10h16v28zM16 16h6v7h-6zM31 20h4l4 4v10a3 3 0 0 0 6 0V18l-4-4" fill="none" stroke="#111418" stroke-width="3" stroke-linejoin="round" />
-          <path d="M11 38h16" stroke="#111418" stroke-width="3" />
-        </svg>
+        <img class="brand-mark" src="assets/images/new/fav.jpeg" width="497" height="359" alt="ST JUDE Autolife logo" />
         <span class="brand-text">
           <strong>ST JUDE</strong>
           <small>Autolife Business Enterprise</small>
@@ -100,7 +99,7 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <h1 id="hero-title">Fuel pumps for your car, matched before you buy.</h1>
-          <p class="lead">Pick your car and see the exact pumps that fit. Confirm the price with us on WhatsApp in one tap.</p>
+          <p class="lead">Reconditioned imported fuel pumps from Europe, America and Japan. Pick your car, see suitable pumps, and confirm availability on WhatsApp.</p>
 
           <div class="hero-actions">
             <a class="btn btn-ink btn-lg" href="#finder">Find my pump</a>
@@ -108,15 +107,15 @@
           </div>
 
           <ul class="trust-list">
-            <li>We sell fuel pumps and related parts only</li>
+            <li>Reconditioned imported pumps from Europe, America and Japan</li>
             <li>We check the fit before you pay</li>
-            <li>You talk to the business directly</li>
+            <li>Open 24 hours, Monday to Saturday</li>
           </ul>
         </div>
 
         <div class="hero-visual">
           <figure class="media hero-main">
-            <img src="assets/images/hero-fuel-pump.jpg" width="1200" height="960" alt="Electric fuel pump on display at ST JUDE Autolife" data-fallback="pump" data-style="vertical" data-label="Petrol" fetchpriority="high" />
+            <img src="assets/images/products/audi-a4-fuel-module.jpg" width="1200" height="1200" alt="High-resolution electric in-tank fuel pump module available from ST JUDE Autolife" data-fallback="pump" data-style="vertical" data-label="Petrol" fetchpriority="high" />
           </figure>
         </div>
       </div>
@@ -133,6 +132,22 @@
           <a href="#cars">Mercedes-Benz</a>
           <a href="#cars">Isuzu</a>
         </nav>
+      </div>
+    </section>
+
+    <!-- STOCK VIDEO -->
+    <section class="section stock-video" aria-labelledby="stock-video-title">
+      <div class="container stock-video-grid">
+        <div>
+          <p class="eyebrow">Available pump stock</p>
+          <h2 id="stock-video-title">See our fuel pumps before you enquire</h2>
+          <p>Watch a short look at our reconditioned imported fuel-pump stock. We source pumps from Europe, America and Japan, then help match the connector and fitment for your car.</p>
+          <a class="btn btn-wa" href="https://wa.me/2204030870?text=Hello%20ST%20JUDE%20Autolife%2C%20I%20saw%20your%20pump%20stock%20video.%20Please%20help%20me%20find%20a%20pump%20for%20my%20car." target="_blank" rel="noopener noreferrer" data-track="whatsapp-stock-video">Ask about available stock</a>
+        </div>
+        <video class="stock-video-player" controls playsinline preload="metadata" poster="assets/images/new/WhatsApp%20Image%202026-10-11%20at%204.38.38%20PM.jpeg" aria-label="ST JUDE Autolife fuel pump stock video">
+          <source src="assets/images/new/WhatsApp%20Video%202026-10-11%20at%204.51.56%20PM.mp4" type="video/mp4" />
+          Your browser does not support this video. Please contact us on WhatsApp to view available stock.
+        </video>
       </div>
     </section>
 
@@ -171,12 +186,45 @@
       </div>
     </section>
 
+    <!-- REAL STOCK PHOTOS -->
+    <section class="section section-soft stock-gallery-section" aria-labelledby="stock-gallery-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow-dark">Real stock photos</p>
+          <h2 id="stock-gallery-title">Fuel pumps currently in our stock</h2>
+          <p>These are real reconditioned imported pump units available through ST JUDE Autolife. Send a photo of your old pump, your car model and engine details so we can confirm the right match.</p>
+        </header>
+        <div class="stock-gallery-grid">
+          <figure class="stock-gallery-item">
+            <img src="assets/images/new/WhatsApp%20Image%202026-10-11%20at%204.38.38%20PM.jpeg" width="607" height="1080" loading="lazy" alt="Reconditioned imported fuel pump module in ST JUDE Autolife stock" />
+            <figcaption>Imported fuel pump module</figcaption>
+          </figure>
+          <figure class="stock-gallery-item">
+            <img src="assets/images/new/WhatsApp%20Image%202026-10-11%20at%204.39.43%20PM.jpeg" width="720" height="857" loading="lazy" alt="Reconditioned fuel pump module held for fitment inspection" />
+            <figcaption>Fuel pump module with sender</figcaption>
+          </figure>
+          <figure class="stock-gallery-item">
+            <img src="assets/images/new/WhatsApp%20Image%202026-10-11%20at%204.39.57%20PM.jpeg" width="720" height="853" loading="lazy" alt="Imported replacement fuel pump module in stock" />
+            <figcaption>Replacement in-tank pump</figcaption>
+          </figure>
+          <figure class="stock-gallery-item">
+            <img src="assets/images/new/WhatsApp%20Image%202026-10-11%20at%204.40.07%20PM.jpeg" width="720" height="865" loading="lazy" alt="Fuel pump assembly with electrical connector and housing" />
+            <figcaption>Pump and connector assembly</figcaption>
+          </figure>
+          <figure class="stock-gallery-item">
+            <img src="assets/images/new/WhatsApp%20Image%202026-10-11%20at%204.41.47%20PM.jpeg" width="713" height="925" loading="lazy" alt="Multiple reconditioned imported fuel pumps in stock" />
+            <figcaption>Available imported pump units</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <!-- CATALOGUE -->
     <section class="section" id="products" aria-labelledby="products-title">
       <div class="container">
         <header class="section-head">
           <h2 id="products-title">All pumps we supply</h2>
-          <p>Search by pump or car model, such as "Corolla" or "Hilux". Filter by type, or sort the list. Tap a pump to see its photos and the cars it fits.</p>
+          <p>All listed pumps are reconditioned imports from Europe, America and Japan. Search by pump or car model, such as "Corolla" or "Hilux", then tap a pump to see photos and fitment guidance.</p>
         </header>
 
         <div class="toolbar">
@@ -254,7 +302,7 @@
       <div class="container about-grid">
         <div>
           <h2 id="about-title">A shop that does one thing well</h2>
-          <p>ST JUDE Autolife Business Enterprise is a Gambian business focused on car fuel pumps. We don't sell everything, so our attention stays on the parts that keep an engine running: the in-tank pump, the external inline pump, the diesel lift pump, the complete module and the relays that drive them.</p>
+          <p>ST JUDE Autolife Business Enterprise is a Gambian business focused on car fuel pumps. Our range is made up of reconditioned imported pumps from Europe, America and Japan. We focus on the parts that keep an engine running: in-tank pumps, external inline pumps, diesel lift pumps, complete modules and the relays that drive them.</p>
           <div class="feature-list">
             <div>
               <h3>Specialist focus</h3>
@@ -267,6 +315,10 @@
             <div>
               <h3>Direct contact</h3>
               <p>You talk to the business itself on WhatsApp, with no call centre in between.</p>
+            </div>
+            <div>
+              <h3>Open 24 hours</h3>
+              <p>We are available 24 hours a day from Monday through Saturday.</p>
             </div>
           </div>
         </div>
@@ -354,6 +406,10 @@
             <p>Prices depend on stock and fitment. We confirm the price with you on WhatsApp before you pay.</p>
           </details>
           <details>
+            <summary>When are you open?</summary>
+            <p>We are open 24 hours from Monday through Saturday. Call or message us before you come so we can prepare the correct pump.</p>
+          </details>
+          <details>
             <summary>What if my car is not listed?</summary>
             <p>Send us the details anyway. We check each request, and some pumps fit more cars than their listing shows.</p>
           </details>
@@ -381,6 +437,10 @@
               <span>Location</span>
               <a href="https://www.google.com/maps/place/13.416826,-16.674595" target="_blank" rel="noopener noreferrer" data-track="map-open">Open in Google Maps</a>
             </li>
+            <li>
+              <span>Opening hours</span>
+              <strong>24 hours, Monday–Saturday</strong>
+            </li>
           </ul>
 
           <a class="btn btn-ink btn-lg" href="https://www.google.com/maps/dir/?api=1&amp;destination=13.416826,-16.674595" target="_blank" rel="noopener noreferrer" data-track="directions">Get directions</a>
@@ -401,17 +461,13 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#top" class="brand" aria-label="ST JUDE Autolife, back to top">
-          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-            <rect width="48" height="48" rx="6" fill="#ffc61a" />
-            <path d="M11 38V10h16v28zM16 16h6v7h-6zM31 20h4l4 4v10a3 3 0 0 0 6 0V18l-4-4" fill="none" stroke="#111418" stroke-width="3" stroke-linejoin="round" />
-            <path d="M11 38h16" stroke="#111418" stroke-width="3" />
-          </svg>
+          <img class="brand-mark" src="assets/images/new/fav.jpeg" width="497" height="359" alt="ST JUDE Autolife logo" />
           <span class="brand-text">
             <strong>ST JUDE</strong>
             <small>Autolife Business Enterprise</small>
           </span>
         </a>
-        <p>Car fuel pump specialists in The Gambia.</p>
+        <p>Reconditioned imported car fuel pumps from Europe, America and Japan.</p>
       </div>
       <nav class="footer-links" aria-label="Footer">
         <a href="#finder">Find by car</a>

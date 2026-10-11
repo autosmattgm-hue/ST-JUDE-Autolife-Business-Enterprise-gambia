@@ -210,6 +210,27 @@ const RAW_PRODUCTS = [
     description: 'In-tank module with pump and level sender for selected Audi A4 petrol models.', fits: ['audi-a4'], art: { style: 'vertical', label: 'Audi A4' }, photos: ['audi-a4-fuel-module.jpg'],
     tips: ['Confirm the A4 generation, engine code and module part number before purchase.'],
   },
+  {
+    id: 'imported-reconditioned-fuel-pumps',
+    name: 'Imported Reconditioned Fuel Pump Stock',
+    category: 'module',
+    fuel: ['petrol', 'diesel'],
+    typeLabel: 'Imported stock',
+    description: 'Reconditioned imported fuel pumps sourced from Europe, America and Japan. Send a photo of your old pump for a fitment match.',
+    universal: true,
+    art: { style: 'vertical', label: 'Stock' },
+    photos: [
+      'assets/images/new/WhatsApp Image 2026-10-11 at 4.38.38 PM.jpeg',
+      'assets/images/new/WhatsApp Image 2026-10-11 at 4.39.43 PM.jpeg',
+      'assets/images/new/WhatsApp Image 2026-10-11 at 4.39.57 PM.jpeg',
+      'assets/images/new/WhatsApp Image 2026-10-11 at 4.40.07 PM.jpeg',
+      'assets/images/new/WhatsApp Image 2026-10-11 at 4.41.47 PM.jpeg',
+    ],
+    tips: [
+      'These are actual stock photos. Send your old pump, connector and car details so we can match the correct unit.',
+      'Every reconditioned imported pump is confirmed against your car before you pay.',
+    ],
+  },
 ];
 
 export const PRODUCTS = Object.freeze(
@@ -219,8 +240,8 @@ export const PRODUCTS = Object.freeze(
     return Object.freeze({
       ...product,
       alt: product.alt ?? product.name,
-      photo: `assets/images/products/${photos[0]}`,
-      photos: Object.freeze(photos.map((file) => `assets/images/products/${file}`)),
+      photo: photos[0].startsWith('assets/') ? photos[0] : `assets/images/products/${photos[0]}`,
+      photos: Object.freeze(photos.map((file) => (file.startsWith('assets/') ? file : `assets/images/products/${file}`))),
     });
   }),
 );
